@@ -1,10 +1,13 @@
 import React from 'react';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import Typed from 'react-typed';
+import Inaam from './inaam.pdf';
 import {Link} from 'react-scroll';
 
 const Home = () => {
 
+    function onResumeClick() {
+        window.open(Inaam);
       }
   return (
     <div name='home' className='w-full h-screen bg-[#242333]'>
@@ -22,9 +25,11 @@ const Home = () => {
           I'm a Full-Stack Developer and a UI/UX Designer with a desire to design and build products that are user-friendly and easy to use. I have a passion for learning new technologies and I am always looking to improve my skills and learn new things along the way to become a better developer.
         </p>
         <div className='flex justify-between'>
+        <a onClick={onResumeClick}> 
         <button className='text-[#a9d2db] group rounded-[20px] border-2 px-6 py-3 my-2 flex items-center hover:bg-[#01B0D3] hover:border-blue-300'>
             Resume
           </button>
+        </a>
         <Link to='about' spy={true} smooth={true} duration={500}>
           <button className='text-[#a9d2db] group rounded-[20px] border-2 px-6 py-3 my-2 flex items-center hover:bg-[#01B0D3] hover:border-blue-300'>
             About Me
