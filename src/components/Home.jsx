@@ -1,13 +1,10 @@
 import React from 'react';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import Typed from 'react-typed';
-import Inaam from './inaam.pdf';
 import {Link} from 'react-scroll';
 
 const Home = () => {
 
-    function onResumeClick() {
-        window.open(Inaam);
       }
   return (
     <div name='home' className='w-full h-screen bg-[#242333]'>
